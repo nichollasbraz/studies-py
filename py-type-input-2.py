@@ -1,0 +1,13 @@
+num_1 = (input("Digite o primeiro valor: "))
+num_2 = (input("Digite o segundo valor: "))
+type_1 = (type(num_1))
+type_2 = (type(num_2))
+
+print("Tipo das variáveis: {} & {}\n".format(type_1, type_2))
+print("Só tem espaços? ", num_1.isspace(), num_2.isspace())
+print("É um número? ", num_1.isnumeric(), num_2.isnumeric())
+print("É alfabético? ", num_1.isalpha(), num_2.isalpha())
+print("É alfanumérico? ", num_1.isalnum(), num_2.isalnum())
+print("Está em minúsculas? ", num_1.islower(), num_2.islower())
+print("Está em maiúsculas? ", num_1.isupper(), num_2.isupper())
+print("Está capitalizada? ", num_1.istitle(), num_2.istitle())
