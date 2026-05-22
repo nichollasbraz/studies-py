@@ -1,7 +1,7 @@
-nome = (input("Nome do aluno: "))
-nota_1 = int(input("Digite a primeira nota: "))
-nota_2 = int(input("Digite a segunda nota: "))
-med = (nota_1 + nota_2) / 2
+num_1 = int(input("Insira um número inteiro: "))
+num_2 = int(input("Insira um segundo número inteiro: "))
+sucessor = num_1 + 1
+antecessor = num_2 - 1
 
-print("\nAluno: {}".format(nome))
-print("Média das notas {} e {}: {}".format(nota_1, nota_2, med))
+print("Sucessor de {}: {}".format(num_1, sucessor))
+print("Antecessor de {}: {}".format(num_2, antecessor))
