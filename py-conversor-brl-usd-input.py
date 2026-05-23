@@ -1,5 +1,6 @@
-valor = float(input("Insira o valor em BRL a ser convertido em USD: "))
-convert = valor / 5.03
+print("Digite o preço do produto em R$:",end="")
+produto = float(input(" "))
+promo = produto - (produto * 0.05)
 
-print("\nTaxa cambial comercial do dólar: 1 USD = 5.03 BRL")
-print("Valor convertido: ${:.2f}".format(convert))
+print("\nPreço original: R${:.2f}".format(produto))
+print("Preço novo (5% de desconto): R${:.2f}".format(promo))
