@@ -1,11 +1,10 @@
-num_1 = int(input("Digite um número inteiro: "))
-num_2 = int(input("Digite um segundo número inteiro: "))
-num_3 = float(input("Digite um numero decimal: "))
+nota_1 = float(input("Digite a primeira nota de Bob: "))
+nota_2 = float(input("Digite a segunda nota de Bob: "))
+nota_3 = float(input("Digite a terceira nota de Bob: "))
+media = (nota_1 + nota_2 + nota_3) / 3
 
-frst = num_1 * (num_2 / 2)
-scnd = float(num_2 + (num_1 * num_3))
-thrd = num_3 ** 3
-
-print("\nPrimeira operação: {}".format(frst))
-print("Segunda operação: {}".format(scnd))
-print("Terceira operação: {:;2f}".format(thrd))
+print("\nNota final: {:.1f}".format(media))
+if (media == 7 or media > 7):
+    print("Bob está aprovado!")
+else:
+    print("Bob está reprovado!")
