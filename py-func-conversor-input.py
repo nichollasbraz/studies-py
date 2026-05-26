@@ -1,18 +1,14 @@
-def conversor(tam):      
-    km = tam / 1000
-    hm = tam / 100
-    dam = tam / 10    
-    dm = tam * 10
-    cm = tam * 100
-    mm = tam * 1000
+def area(largura, altura):
+    area = largura * altura
+    tinta = area / 2           
     
-    c_km = print("\nEm quilômetros: {:.4f} km".format(km))
-    c_hm = print("Em hectômetros: {:.3f} hm".format(hm))
-    c_dam = print("Em decâmetros: {:.2f} dam".format(dam))
-    c_dm = print("Em decímetros: {:.0f} dm".format(dm))
-    c_cm = print("Em centímetros: {:.0f} cm".format(cm))
-    c_mm = print("Em milímetros: {:.0f} mm".format(mm))
-    return cm, mm
+    print("\nDimensão da parede: {:.2f}x{:.2f}".format(largura, altura))
+    print("Área: {:.2f}m²".format(area))
+    print("Para cada 2m², será necessário {:.2f}l de tinta.".format(tinta))
 
-tam = float(input("Digite um valor em metros para ser convertido: "))
-conversor(tam)
+    return area, tinta
+
+largura = float(input("Digite a largura da parede: "))
+altura = float(input("Digite a altura da parede: "))
+
+area(largura,altura)
