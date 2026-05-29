@@ -1,0 +1,5 @@
+Produto,Estoque,Vendas
+Leite,200,100
+Farinha,50,200
+Bolacha,15,60
+Sabonete,50,75

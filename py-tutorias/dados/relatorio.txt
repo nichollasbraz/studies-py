@@ -1,0 +1,5 @@
+2 alunos obtiveram nota A
+2 alunos obtiveram nota A-
+4 alunos obtiveram nota B
+1 aluno obteve nota C
+3 alunos obtiveram nota F

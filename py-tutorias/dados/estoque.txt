@@ -1,0 +1,3 @@
+Água 100
+Leite 200
+Farinha 50
