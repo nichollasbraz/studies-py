@@ -1,12 +1,18 @@
-def numLines(filename):
-    file = open(filename, "r", encoding="UTF-8")
-    content = file.readlines()
-    file.close()
+def meuIMC(peso, altura):
+    indice = peso / (altura ** 2)
 
-    print("\nConteúdo do arquivo '{}':".format(filename))
-    print(content)
+    if indice < 18.5:
+        print("\nIMC: {:.1f}".format(indice))
+        print("Abaixo do peso")
+    elif 18.5 <= indice < 25:
+        print("\nIMC: {:.1f}".format(indice))
+        print("Peso normal")
+    else:
+        print("\nIMC: {:.1f}".format(indice))
+        print("Acima do peso")
 
-    return(len(content))
+    return indice 
 
-filename = input(str("Digite o nome do arquivo: "))
-print("\nQuantidade de linhas: {}".format(numLines(filename)))
+peso = float(input("Digite o peso do indivíduo: "))
+altura = float(input("Digite a altura do indivíduo: "))
+imc = meuIMC(peso,altura)
