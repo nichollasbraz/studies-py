@@ -1,18 +1,9 @@
-def fatorial(num):
-    if num < 0:
-        print("\nValor inválido!")
-        return None
-    
-    result = 1
-    
-    print("\n", end="")
-    for i in range(1, num + 1):
-        print("{}".format(i), end="")
-        if i < num:
-            print(" * ", end="")
-        result *= i
+city = str(input("Em qual cidade você nasceu? "))
+city.strip()
+city_u = city.upper()
+correct_city = "SANTO"
 
-    print("\n!{}: {}".format(num, result))
-
-num = int(input("Digite um número inteiro positivo: "))
-fatorial(num)
+if city_u[:5] == correct_city:
+    print("\nLegal!")
+else:
+    print("\nNão")
