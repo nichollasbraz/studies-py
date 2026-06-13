@@ -14,7 +14,7 @@ A simple Python login system created to practice programming fundamentals.\
 • Option to display the number of failed attempts\
 • Exit option\
 • Password **(pythonEhLegal)**
-### Run 
+## Run 
 ```bash 
 python main.py
 ```
