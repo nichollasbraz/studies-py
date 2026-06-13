@@ -13,7 +13,7 @@ A simple Python login system created to practice programming fundamentals.\
 • Maximum of 3 login attempts\
 • Option to display the number of failed attempts\
 • Exit option\
-• Password **(pythonEhLegal)**
+• Password **(pythonEhLegal)**.
 ## Run 
 ```bash 
 python main.py
@@ -23,7 +23,7 @@ python main.py
 • Loops **(while)**\
 • Conditional statements **(if, elif, else)**\
 • User input validation\
-• Variables and program flow
+• Variables and program flow.
 ## Purpose
 
 This project was developed as a programming exercise to improve Python and problem-solving skills.
