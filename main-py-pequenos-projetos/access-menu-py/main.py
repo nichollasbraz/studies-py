@@ -1,6 +1,6 @@
 def menu():
     erros = 0
-    print("\nOlá!")
+    print("Olá!")
 
     while True:
         print("1) entrar\n2) exibir tentativas\n3) sair")
@@ -21,7 +21,7 @@ def menu():
             break
 
         else:
-            print("Entrada inválida!")
+            print("Número precisa ser entre 1 a 3.")
 
 
 def entrada(erros):
