@@ -8,7 +8,7 @@ A simple Python game created to practice programming fundamentals. The objective
 
 ## Features
 • Interactive menu\
-• Customizable grid size (rows and columns)\
+• Customizable grid size **(rows and columns)**\
 • Random bomb placement\
 • Input validation\
 • Continuous gameplay until the bomb is found\
