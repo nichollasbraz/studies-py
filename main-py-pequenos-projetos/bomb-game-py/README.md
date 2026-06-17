@@ -12,7 +12,7 @@ A simple Python game created to practice programming fundamentals. The objective
 • Random bomb placement\
 • Input validation\
 • Continuous gameplay until the bomb is found\
-• Option to start a new game or exit
+• Option to start a new game or exit.
 ## Run 
 ```bash 
 python main.py
@@ -24,7 +24,7 @@ python main.py
 • Exception handling **(try/except)**\
 • Random number generation **(random)**\
 • User input validation\
-• Program flow control
+• Program flow control.
 ## Purpose
 
 This project was developed as a programming exercise to improve Python skills, problem-solving abilities, and understanding of control structures, validation, and game logic.
