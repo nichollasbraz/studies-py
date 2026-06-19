@@ -23,7 +23,6 @@ def menu():
         else:
             print("Número precisa ser entre 1 a 3.")
 
-
 def entrada(erros):
     senha_og = "pythonEhLegal"
     
@@ -38,7 +37,6 @@ def entrada(erros):
         return 0
 
     erros += 1
-
 
     if erros >= 3:
         print("Você atingiu o limite de tentativas. Voltando ao menu...")
