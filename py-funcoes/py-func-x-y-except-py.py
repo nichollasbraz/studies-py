@@ -1,7 +1,7 @@
 def safePrint(arqNome):
     try:
         arqLeitura = open(arqNome, "r", encoding="UTF-8")
-        arqCont = arqLeitura.readlines(1)
+        arqCont = arqLeitura.readline()
         arqLeitura.close()
 
         print(f"{arqCont}")
