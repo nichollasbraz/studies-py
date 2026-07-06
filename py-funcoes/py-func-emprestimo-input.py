@@ -1,11 +1,15 @@
 def Emprestimo():
-    empCasa = float(input("Insira o valor do imóvel:\n> "))
-    empSal = float(input("Insira sua renda mensal:\n> "))
+    empCasa = float(input("Insira o valor do imóvel:\n> R$"))
+    empSal = float(input("Insira sua renda mensal:\n> R$"))
     empAnos = float(input("Insira em quantos anos serão pagos:\n> "))
+    empCasaPrest = (empCasa / empAnos) / 12
+    empSalPrest = empSal * 0.3
 
-    if ((empCasa / empAnos) / 12) > (empSal * 0.30): 
-        print("Infelizmente, sua renda não é suficiente.")
+    if empCasaPrest > empSalPrest: 
+        print(f"A prestação do imóvel será de R${empCasaPrest:.2f} mensais.")
+        print("Infelizmente, sua renda não é compatível.")
     else:
-        print("Sua renda é compatível para manter por {} anos!".format(int(empAnos)))
+        print(f"A prestação do imóvel será de R${empCasaPrest:.2f} mensais")
+        print(f"Sua renda é compatível!")
     
 Emprestimo()

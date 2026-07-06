@@ -13,7 +13,9 @@ def calcTempo(dia, mes, ano):
         dataMaiorDiff = relativedelta(dataAtual, dataMaior)
 
         print(
-            f"Já se passaram {dataMaiorDiff.years} anos, {dataMaiorDiff.months} meses e {dataMaiorDiff.days} dias desde que você atingiu a maioridade."
+            f"Já se passaram {dataMaiorDiff.years} anos, ", end=""
+            f"{dataMaiorDiff.months} meses e "
+            f"{dataMaiorDiff.days} dias desde que você atingiu a maioridade."
             )
     else:
         print("Você ainda é menor de idade e não pode se alistar.")
