@@ -35,7 +35,7 @@ def lerNome():
         ).strip()
 
         if nome:
-            return nome.upper()
+            return nome.lower()
 
         erro = "entrada inválida. tente novamente.\n"
 
@@ -156,7 +156,6 @@ def Jogadores():
     jogadores = []
 
     while True:
-
         nome = lerNome()
         partidas = lerPartidas(nome)
 
@@ -177,7 +176,6 @@ def Jogadores():
         msg = ""
 
         while True:
-
             opcao = input(
                 f"{msg}"
                 "jogador cadastrado com sucesso.\n"
@@ -198,7 +196,6 @@ def Jogadores():
     msg = ""
 
     while True:
-
         mostrarTabela(jogadores)
 
         try:
