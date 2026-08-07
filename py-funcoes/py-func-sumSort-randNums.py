@@ -25,7 +25,7 @@ def sumSort(lista):
             if num % 2 == 0:
                 print(f"{num}", end=" ", flush=True)
                 sleep(0.5)
-        print(f"\nsoma: {sumNums}")
+        print(f"\nsoma dos pares: {sumNums}")
 
 nums = []
 randNums(nums)
