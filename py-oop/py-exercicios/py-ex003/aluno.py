@@ -8,7 +8,4 @@ class Aluno(Pessoa):
 
     def matricula(self):
         return f"o aluno {self.nome} acabou de matricular-se no {self.escola}."
-
-    def estudar(self):
-            return f"{self.nome} está estudando {self.curso} na turma {self.turma}."
     
