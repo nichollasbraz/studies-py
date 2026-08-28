@@ -6,6 +6,7 @@ def main():
     a1 = Aluno("José", 17, "Informática", "T601")
     print(a1.__dict__)
     print(a1.matricula())
+    print(a1.estudar())
     print(a1.aniversario())
 
     p1 = Professor("Samuel", 33, "Mestrado", "Biologia")

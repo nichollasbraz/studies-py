@@ -158,5 +158,6 @@ while True:
             if entrada == '@':
                 controle.tvLigar()
                 break
+            
     elif entrada == '0':
         break

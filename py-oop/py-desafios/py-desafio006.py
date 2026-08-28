@@ -11,7 +11,7 @@ class Caneta():
         }
 
     def __init__(self, corCaneta):
-        self.cor = corCaneta.lower()
+        self.cor = corCaneta.lower().strip()
         self.tampada = True
 
     def destampar(self):
