@@ -1,6 +1,6 @@
 from moto import Moto
 from drone import Drone
-from caminhao import Caminhao
+from caminhao import Caminhão
 
 def main():
     b = Moto(20)
@@ -12,9 +12,9 @@ def main():
     d = Drone(11)
     d.calc_frete()
 
-    c = Caminhao(49)
+    c = Caminhão(49)
     c.calc_frete()
-    c = Caminhao(120)
+    c = Caminhão(120)
     c.calc_frete()
 
 if __name__ == "__main__":
