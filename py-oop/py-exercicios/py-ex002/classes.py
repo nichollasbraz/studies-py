@@ -22,7 +22,3 @@ class ContaBancaria():
         return f"saldo anterior : r${self.saldo:,.2f}\nsaldo atual : r${self.saldoDeposito:,.2f}(+r${valor:,.2f})"
 
 
-c1 = ContaBancaria(112, "Gustavo Guanabara", 3000)
-print(c1.saque(4000))
-print(c1.deposito(700))
-print(c1)
