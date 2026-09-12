@@ -20,7 +20,7 @@ class Diario():
         if senha == self.__senha:
             self.__acesso = True
         else:
-            self.__acesso = False
+            self.__acesso =False
 
             raise ValueError("senha incorreta.")
 
