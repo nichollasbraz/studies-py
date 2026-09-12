@@ -9,7 +9,7 @@ class Funcionario(ABC):
     def __init__(self, nome = "", salario = 0):
         self.nome = nome
         self.salario = salario
-
+  
 
     def analisarSal(self):
         tipoFunc = type(self).__name__.lower()
