@@ -1,0 +1,224 @@
+Projeto acadêmico desenvolvido em Python aplicando conceitos
+de Programação Orientada a Objetos (POO).
+
+
+------------------------------------------------------------
+1. COMO EXECUTAR
+------------------------------------------------------------
+
+Requisitos: Python 3 instalado.
+
+Para iniciar o programa, execute o arquivo principal:
+
+    python __main__.py
+
+O menu principal será exibido e a navegação é feita digitando
+o número da opção desejada.
+
+
+------------------------------------------------------------
+2. ESTRUTURA DE ARQUIVOS
+------------------------------------------------------------
+
+O projeto é dividido em dois grupos de arquivos: backend
+(lógica do sistema, sem interface) e frontend (interface com
+o usuário, menus e mensagens).
+
+BACKEND:
+
+  animals.py
+      Define a classe abstrata Animal e as subclasses Lion,
+      Elephant, Monkey, Giraffe e Penguin. Cada espécie possui
+      sua própria lista de alimentos permitidos. Também contém
+      as funções de registro, exclusão e busca de animais.
+
+  employees.py
+      Define a classe abstrata Employee e as subclasses
+      Zookeeper (tratador) e Veterinarian (veterinário).
+      Contém os métodos de registro e exclusão de funcionários,
+      além do registro de atividades realizadas.
+
+  enclosures.py
+      Define a classe abstrata Enclosure e as subclasses
+      SavannhaEnclosure, ForestEnclosure e AquaticEnclosure.
+      Controla a compatibilidade entre animais e recintos e a
+      capacidade máxima de cada um.
+
+  activities.py
+      Define a classe Activity, usada para registrar as ações
+      realizadas pelos funcionários (alimentação, tratamento,
+      checkup, limpeza, medicação), com data e hora.
+
+
+FRONTEND:
+
+  __main__.py
+	Menu principal de rodagem simples, acoplado com todos 
+      os outros menus e interfaces.
+
+  frontMain.py
+	Menu subprincipal do programa. A partir dele o usuário
+      acessa os demais submenus (animais, funcionários,
+      recintos, cuidados com animais e atividades).
+
+  animalFront.py
+      	Interface para registrar, listar, visualizar detalhes e
+      deletar animais.
+
+  employeesFront.py
+      	Interface para registrar zookeepers e veterinários,
+      listar, deletar e visualizar atividades registradas.
+
+  enclosureFront.py
+      	Interface para criar recintos, listar, adicionar animais
+      e visualizar detalhes.
+
+  animalCareFront.py
+      	Interface para realizar alimentação, tratamento, checkup
+      e prescrição de medicamentos.
+
+  activitiesFront.py
+      	Interface para registrar atividades manualmente, listar
+      todas as atividades, filtrar por funcionário ou tipo, e
+      visualizar estatísticas.
+
+
+------------------------------------------------------------
+3. HIERARQUIA DE CLASSES
+------------------------------------------------------------
+
+Animal (abstrata)
+    Lion
+    Elephant
+    Monkey
+    Giraffe
+    Penguin
+
+Employee (abstrata)
+    Zookeeper
+    Veterinarian
+
+Enclosure (abstrata)
+    SavannhaEnclosure
+    ForestEnclosure
+    AquaticEnclosure
+
+Activity (concreta)
+
+
+------------------------------------------------------------
+4. ARMAZENAMENTO DE DADOS
+------------------------------------------------------------
+
+Os dados são armazenados em dicionários, mantidos em memória
+durante a execução do programa:
+
+  animals_dict      -> armazena os objetos Animal
+  employees_dict    -> armazena os objetos Employee
+  enclosures_dict   -> armazena os objetos Enclosure
+  activities_dict   -> armazena os objetos Activity
+
+Observação: como os dados ficam apenas em memória, eles são
+perdidos ao encerrar o programa. Não há gravação em arquivo.
+
+
+------------------------------------------------------------
+5. FUNCIONALIDADES POR MODULO
+------------------------------------------------------------
+
+ANIMAIS
+  - Registrar animal (id, nome, espécie, idade)
+  - Listar animais registrados
+  - Visualizar detalhes de um animal
+  - Deletar animal
+
+FUNCIONARIOS
+  - Registrar zookeeper
+  - Registrar veterinário
+  - Listar funcionários registrados
+  - Deletar funcionário
+  - Visualizar atividades de um funcionário
+
+RECINTOS
+  - Criar recinto (savana, floresta ou aquático)
+  - Listar recintos registrados
+  - Adicionar animal a um recinto (com verificação de
+    compatibilidade de espécie e capacidade máxima)
+  - Visualizar detalhes de um recinto
+
+CUIDADOS COM ANIMAIS
+  - Alimentar animal (somente zookeeper, valida o alimento)
+  - Tratar animal (somente zookeeper)
+  - Realizar checkup (somente veterinário)
+  - Prescrever medicamento (somente veterinário)
+
+ATIVIDADES
+  - Registrar atividade manualmente
+  - Listar todas as atividades
+  - Listar atividades de um funcionário especifico
+  - Filtrar atividades por tipo
+  - Visualizar estatísticas (contagem por tipo)
+
+
+------------------------------------------------------------
+6. REGRAS DE ALIMENTACAO POR ESPECIE
+------------------------------------------------------------
+
+Lion (Leão):      beef, horse meat, chicken
+Elephant:         grass, leaves, fruits, vegetables
+Monkey:           banana, fruits, nuts, insects
+Giraffe:          leaves, tree branches, fruits
+Penguin:          fish, krill, squid
+
+Ao tentar alimentar um animal com um item fora da lista
+permitida, o sistema retorna um erro informando que o
+alimento não é apropriado para aquela espécie.
+
+
+------------------------------------------------------------
+7. COMPATIBILIDADE DE RECINTOS
+------------------------------------------------------------
+
+SavannhaEnclosure:   Lion, Giraffe
+ForestEnclosure:     Monkey, Elephant
+AquaticEnclosure:    Penguin
+
+Um animal só pode ser adicionado a um recinto compatível com
+sua espécie. Também é verificada a capacidade máxima antes de
+adicionar um novo animal.
+
+
+------------------------------------------------------------
+8. CONCEITOS DE PROGRAMACAO APLICADOS
+------------------------------------------------------------
+
+  - Programação Orientada a Objetos (POO)
+  - Classes abstratas e métodos abstratos
+  - Herança e polimorfismo
+  - Encapsulamento
+  - Estruturas de repetição (while)
+  - Estruturas condicionais (if, elif, else)
+  - Dicionários
+  - Tratamento de excecoes (try/except)
+  - Programação modular
+  - Separação entre backend e frontend
+
+
+------------------------------------------------------------
+9. OBSERVACOES GERAIS
+------------------------------------------------------------
+
+  - A interface é apresentada em inglês.
+  - Não há persistência de dados em arquivo; todo o conteúdo
+    é perdido ao fechar o programa.
+  - Cada submenu pode ser executado também de forma isolada,
+    pois cada arquivo *Front.py possui um bloco
+    "if __name__ == '__main__'".
+
+
+------------------------------------------------------------
+10. AUTOR
+------------------------------------------------------------
+
+Desenvolvido por Nichollas Braz como projeto acadêmico de
+Programação Orientada a Objetos (POO).
