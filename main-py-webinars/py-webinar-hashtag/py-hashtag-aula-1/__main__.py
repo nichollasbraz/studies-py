@@ -44,7 +44,7 @@ sleep(4)
 
 import pandas
 
-tabela = pandas.read_csv("produtos.csv", encoding="UTF-8")
+tabela = pandas.read_csv("csv-produtos.csv", encoding="UTF-8")
 
 # 4ª etapa: cadastrar os produtos
 
