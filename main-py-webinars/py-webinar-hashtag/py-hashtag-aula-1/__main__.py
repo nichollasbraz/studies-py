@@ -51,41 +51,42 @@ tabela = pandas.read_csv("produtos.csv", encoding="UTF-8")
 for linha in tabela.index: 
     # código
     pyautogui.click(675, 250)
-    t_codigo = tabela.loc[linha, "codigo"]
+    t_codigo = str(tabela.loc[linha, "codigo"])
     pyautogui.write(t_codigo)
     pyautogui.press("tab")
 
     # marca 
-    t_marca = tabela.loc[linha, "marca"]
+    t_marca = str(tabela.loc[linha, "marca"])
     pyautogui.write(t_marca)
     pyautogui.press("tab")
 
     # tipo
-    t_tipo = tabela.loc[linha, "tipo"]
+    t_tipo = str(tabela.loc[linha, "tipo"])
     pyautogui.write(t_tipo)
     pyautogui.press("tab")
 
     # categoria
-    t_categoria = tabela.loc[linha, "categoria"]
+    t_categoria = str(tabela.loc[linha, "categoria"])
     pyautogui.write(t_categoria)
     pyautogui.press("tab")
 
     # preço
 
-    t_preco = tabela.loc[linha, "preco"]
+    t_preco = str(tabela.loc[linha, "preco"])
     pyautogui.write(t_preco)
     pyautogui.press("tab")
 
     # custo
 
-    t_custo = tabela.loc[linha, "custo"]
+    t_custo = str(tabela.loc[linha, "custo"])
     pyautogui.write(t_custo)
     pyautogui.press("tab")
 
     # obs
 
-    t_obs = tabela.loc[linha, "obs"]
-    pyautogui.write(t_obs)
+    t_obs = str(tabela.loc[linha, "obs"])
+    if t_obs != "nan":    
+        pyautogui.write(t_obs)
     pyautogui.press("tab")
     
     # enviar
