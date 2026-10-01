@@ -10,8 +10,8 @@
 import streamlit as st
 from openai import OpenAI
 
-modelAI = OpenAI(api_key="",
-                base_url="https://generativelanguage.googleapis.com/v1beta")
+# necessário o cadastro da API_KEY na função:
+# modelAI = OpenAI().
 
 st.write("## Chatbot de IA")
 
