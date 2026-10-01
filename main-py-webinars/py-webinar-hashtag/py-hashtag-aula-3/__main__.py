@@ -10,7 +10,7 @@
 import streamlit as st
 from openai import OpenAI
 
-# necessário o cadastro da API_KEY na função:
+# necessário o cadastro da chave na função:
 # modelAI = OpenAI().
 
 st.write("## Chatbot de IA")
